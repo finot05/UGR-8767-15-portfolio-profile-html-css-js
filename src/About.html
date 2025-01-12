@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome to my portfolio! Explore my projects, skills, and achievements. Connect with me and learn more about my work.">
   <title>Portfolio - About Me</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <header>
@@ -12,9 +16,13 @@
       <div id="logo">
         <span>FS</span>
       </div>
-      <nav>
-        <ul>
-          <li><a href="Home.html">Home</a></li>
+      <nav class="navbar">
+        <button class="menu-icon" aria-label="Toggle navigation menu">
+          <i class="fas fa-bars" aria-hidden="true"></i> <!-- Font Awesome Hamburger Icon -->
+          <i class="fas fa-times" aria-hidden="true"></i> <!-- X Icon -->
+        </button>
+        <ul class="nav-list" id="nav-list">
+          <li><a href="../index.html">Home</a></li>
           <li><a href="About.html">About Me</a></li>
           <li><a href="Projects.html">Projects</a></li>
           <li><a href="Resume.html">Resume</a></li>
@@ -23,82 +31,110 @@
       </nav>
     </div>      
   </header> 
-  <main>
+  <main id="aboutmain">
     <section class="about-me">
       <h2>About Me</h2>
       <p>Hello! My name is Finoteloza Sisay, and I’m currently in my 3rd -year Software Engineering student at AAiT. 
         I’ve developed a strong foundation in web development, working with HTML, CSS, and JavaScript to build user-friendly 
         and interactive web pages. Alongside my web skills, I’m also building my expertise in data structures and algorithms, 
         which have enhanced my problem-solving abilities. I’m excited to continue growing as a developer and explore full-stack 
-        development in the future. Outside of academics, I enjoy exploring new hobbies, working on practical projects</p>
+        development in the future. Outside of academics, I enjoy exploring new hobbies, working on practical projects.</p>
     </section>
-
-    <section class="hobbies-and-interests">
-      <div class="hobbies">
-        <h4>Hobbies</h4>
-        <ul>
-          <li>Drawing fine art</li>
-          <li>Reading self-improvement topics</li>
-          <li>Coding for fun and building small projects</li>
-          <li>Playing Musical Instrument</li>
-        </ul>
+    <div id="about-main">
+      <section class="hobbies-and-interests">
+        <div class="hobbies">
+          <h4>Hobbies</h4>
+          <ul>
+            <li>Drawing fine art</li>
+            <li>Reading self-improvement topics</li>
+            <li>Coding for fun and building small projects</li>
+            <li>Playing Musical Instrument</li>
+          </ul>
+        </div>
+        <div class="interests">
+          <h4>Interests</h4>
+          <ul>
+            <li>Technical Drawing</li>
+            <li>Artificial Intelligence</li>
+            <li>Exploring Python, data structures, and solving problems</li>
+            <li>Learning New Skills</li>
+          </ul>
+          <figure>
+            <audio controls>
+              <source src="assets/audio.Mp3" type="audio/Mp3">
+            </audio>
+          </figure>    
+        </div>      
+      </section>
+      <div id="adventure">
+        <section class="adventures">
+          <h4>Adventures</h4>
+          <div class="gallery">
+              <figure>
+                  <video controls>
+                      <source src="assets/drawing_video.mp4" type="video/mp4">
+                  </video>
+                  <figcaption>This video highlights the intricate process of creating art and also painting, something that fascinates and inspires me as I explore my hobbies and interests.</figcaption>
+              </figure>
+              <figure>
+                  <video controls>
+                      <source src="assets/drawing_video2.mp4" type="video/mp4">
+                  </video>
+                  <figcaption>This video showcases the mesmerizing process of drawing and creating art, an inspiring journey that fuels my passion and motivates me.</figcaption>
+              </figure>
+              <figure id="lalibela">
+                  <img src="images/lalibela.png" alt="A serene view of nature and history">
+                  <figcaption>This image captures the serene beauty of nature and captures the historic beauty, a place that inspires my sense of wonder and love for exploration.</figcaption>
+              </figure>
+          </div>
+        </section>
       </div>
-      <div class="interests">
-        <h4>Interests</h4>
-        <ul>
-          <li>Technical Drawing</li>
-          <li>Artificial Intelligence</li>
-          <li>Exploring Python, data structures, and solving problems</li>
-          <li>Learning New Skills</li>
-        </ul>
-        <figure>
-          <audio controls>
-            <source src="Audio/audio.Mp3" type="audio/Mp3">
-          </audio>
-        </figure>    
-      </div>      
-    </section>
+      
+    </div>
     
-    <section class="adventures">
-      <h3>Adventures</h3>
-      <div class="gallery">
-        <figure>
-          <video controls>
-            <source src="video/drawing_video.mp4" type="video/mp4">
-          </video>
-          <figcaption>This video highlights the intricate process of creating art and also painting, something that fascinates and inspires me as I explore my hobbies and interests.</figcaption>
-        </figure>
-        <figure>
-          <video controls>
-            <source src="video/drawing_video2.mp4" type="video/mp4">
-          </video>
-          <figcaption>This video showcases the mesmerizing process of drawing and creating art, an inspiring journey that fuels my passion and motivates me.</figcaption>
-        </figure>
-        <figure>
-          <img src="images/lalibela.png" alt="">
-          <figcaption>This image captures the serene beauty of nature and captures the historic beauty, a place that inspires my sense of wonder and love for exploration.</figcaption>
-        </figure>
-      </div>
-    </section>
   </main> 
   <footer>
-    <div>
-      <div>
-        <p>Contact Info</p> 
+    <div class="footer-container">
+      <div class="footer-contact">
+        <p class="footer-title">Contact Info</p>
         <p>Phone: +251942055380</p>
         <p>Email: finotelozasisay@gmail.com</p>
       </div>
-      <div>
-        <p>Connect with Me</p>
-        <a href="https://web.facebook.com/profile.php?id=61569473900438"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.linkedin.com/in/finote-sisay-372832209/"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://t.me/Finot05"><i class="fa-brands fa-telegram"></i></a>
-        <a href="https://www.instagram.com/finot_21/"><i class="fa-brands fa-instagram"></i></a>
-      </div>
-      <div>
-        <p>&copy; 2024 Finoteloza Sisay. All rights reserved.</p>
+  
+      <div class="footer-social">
+        <p class="footer-title">Connect with Me</p>
+        <div class="footer-social-icons">
+          <div class="icon-groups">
+            <a href="https://web.facebook.com/profile.php?id=61569473900438" 
+               class="social-link" 
+               aria-label="Connect with me on Facebook">
+              <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/finote-sisay-372832209/" 
+               class="social-link" 
+               aria-label="Connect with me on LinkedIn">
+              <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="icon-groups">
+            <a href="https://t.me/Finot05" 
+               class="social-link" 
+               aria-label="Connect with me on Telegram">
+              <i class="fa-brands fa-telegram" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/finot_21/" 
+               class="social-link" 
+               aria-label="Connect with me on Instagram">
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
+    <div class="footer-copyright">
+      <p>&copy; 2024 Finoteloza Sisay. All rights reserved.</p>
+    </div>
   </footer>
+  <script src="../index.js"></script>
 </body>
 </html>
