@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Welcome to my portfolio! Explore my projects, skills, and achievements. Connect with me and learn more about my work.">
-  <title>Portfolio - Contact Me</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="../style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to my portfolio! Explore my projects, skills, and achievements. Connect with me and learn more about my work.">
+    <title>Portfolio - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
 <body>
   <header>
     <div >
@@ -21,32 +20,39 @@
           <i class="fas fa-bars" aria-hidden="true"></i> <!-- Font Awesome Hamburger Icon -->
           <i class="fas fa-times" aria-hidden="true"></i> <!-- X Icon -->
         </button>
+        
         <ul class="nav-list" id="nav-list">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="About.html">About Me</a></li>
-          <li><a href="Projects.html">Projects</a></li>
-          <li><a href="Resume.html">Resume</a></li>
-          <li><a href="Contact.html">Contact Me</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="src/About.html">About Me</a></li>
+          <li><a href="src/Projects.html">Projects</a></li>
+          <li><a href="src/resume.html">Resume</a></li>
+          <li><a href="src/Contact.html">Contact Me</a></li>
         </ul>
       </nav>
     </div>      
-  </header>
+  </header> 
   <main class="short-cont">
-    <h2 id="contact-me">Contact Me</h2>
-    <form id="contactForm" method="POST">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" placeholder="Your Name" required>
     
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" placeholder="Your Email" required>
-    
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
-    
-      <button type="submit" >Submit</button>
-    </form>
-  </main>
-  <footer id="contact-footer">
+    <section class="bio">
+      
+      <div class="bio-content">
+        <h2 id="Welcome">Welcome to My Portfolio</h2>
+        <h3>Hi, I’m Finoteloza Sisay,</h3>
+        <p> I am a 3rd-year Software Engineering student at AAiT. 
+          I’m passionate about coding, web development, and solving real-world problems through technology. 
+          Currently, I’m exploring front-end development and building innovative projects to sharpen my skills. 
+          Take a look at my work or download my CV. </p> 
+      </div>
+      <div class="bio-image">
+        <img src="src/images/profile.jpg" alt="Profile photo of Finoteloza Sisay, a 3rd-year software engineering student">
+      </div>
+    </section>
+    <section class="links" id="quick-links">
+      <a href="About.html" class="btn">More >></a>
+      <a href="resume.html" class="btn">Download my CV</a>
+    </section>
+  </main> 
+  <footer>
     <div class="footer-container">
       <div class="footer-contact">
         <p class="footer-title">Contact Info</p>
@@ -83,11 +89,17 @@
           </div>
         </div>
       </div>
+      
+          
+          
+        </div>
+        
+      </div>
     </div>
     <div class="footer-copyright">
       <p>&copy; 2024 Finoteloza Sisay. All rights reserved.</p>
     </div>
   </footer>
-  <script src="../index.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>

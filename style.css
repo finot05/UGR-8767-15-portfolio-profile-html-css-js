@@ -1,0 +1,655 @@
+/* Mobile-first styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+} 
+img{
+    width: 100%;
+}
+h2{
+    margin-bottom: 50px;
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+h4{
+    margin-top: 50px;
+}
+ul {
+    list-style: none;
+    padding: 0; 
+}
+/*header*/
+header {
+    background-color: #614346; 
+    padding: 5px 20px; 
+    margin-bottom: 60px;
+}
+/* Flexbox layout for the header's child elements */
+header > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none; 
+}
+
+.nav-list li {
+    text-align: center; 
+    margin: 10px 0; 
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white; 
+    font-size: 16px;
+}
+
+#logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #614346;
+    background-color: #D39297;
+    border-radius: 80px;
+    padding: 10px;
+}
+.hide {
+    display: none;
+}
+
+.menu-icon i {
+    display: none;
+}
+
+.menu-icon i.fa-bars {
+    display: inline-block;
+}
+
+.menu-icon.open i.fa-bars {
+    display: none; /* Hide hamburger when open */
+}
+
+.menu-icon.open i.fa-times {
+    display: inline-block; /* Show the X icon when open */
+}
+
+
+.menu-icon {
+    background: none; /* Remove default button styles */
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    font-size: 24px; 
+    color: #333; 
+    position: relative; 
+    z-index: 1100; 
+}
+
+.menu-icon:hover {
+    color: #555; 
+}
+
+.nav-list.show {
+    display: block;
+    position: absolute;
+    top: 50px; 
+    right: 0; 
+    width: 250px; 
+    background-color: rgba(97, 67, 70, 0.9); 
+    z-index: 1000; 
+    border-radius: 5px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px; 
+}
+
+/*home*/
+main {
+    text-align: center; 
+    padding: 0px;
+    margin: 0px;
+}
+
+.bio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; 
+    gap: 20px;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    
+}
+
+.bio-content {
+    flex: 1; 
+    text-align: left; 
+}
+
+.bio-image {
+    flex: 1; 
+    max-width: 400px; 
+}
+
+.bio-image img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px;
+}
+
+/* Links Section */
+.links {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 40px; 
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #80585B;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    font-size:1em;
+    cursor: pointer;
+}
+.download .btn{
+    border-radius: 8px;
+}
+
+.links .btn:hover {
+    background-color: #6d4648; 
+}
+/*About me*/
+.adventures {
+    text-align: center;
+    padding: 5px;
+    margin-left: 0px;
+}
+
+.adventures h3 {
+    
+    margin-bottom: 20px;
+}
+
+.adventures .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    gap: 30px; 
+}
+
+.adventures figure {
+    flex: 1 1 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.adventures video, .adventures img{
+    max-width: 80%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.adventures figcaption {
+    max-width: 80%;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: center;
+}
+#about-main{
+    display: flex;
+    flex-direction: column;
+}
+
+.adventures .gallery figure {
+    flex: 1 1 100%; 
+}
+.interests , .hobbies{
+    text-align: justify;
+}
+#lalibela img{
+    width: 300px;
+    margin-left: 30px;
+}
+#lalibela figcaption{
+    margin-right: 60px;
+}
+
+@media (max-width: 768px) {
+    
+    .bio {
+        flex-direction: column; 
+        text-align: center; 
+    }
+
+    .bio-content {
+        text-align: center; 
+    }
+
+    .links {
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    .links .btn {
+        width: 100%; 
+        max-width: 300px; 
+        margin: 10px auto; 
+    }
+}
+
+/*projects */
+.article-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    gap: 20px; 
+  }
+  
+  .project-card {
+    width: 30%; 
+    box-sizing: border-box;
+  }
+  .project-card img{
+    height: 350px;
+    border: 1px solid #abaaaa ;
+    border-radius: 4px;
+    
+  }
+@media (max-width: 1025px) {
+    .adventures {
+        margin-left: 0px;
+    }
+    .nav-list {
+        display: none; /* Hide menu by default */
+    }
+    .menu-icon {
+        display: block; 
+        cursor: pointer; 
+    }
+
+    .nav-list.show {
+        display: block; 
+        position: absolute;
+        top: 60px; 
+        right: 0;
+        width: 250px;
+        background-color: rgba(97, 67, 70, 0.9); 
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+        padding: 10px; 
+    }
+    
+    .nav-list li {
+        text-align: left;
+        margin: 10px 0;
+    }
+
+    .nav-list a {
+        font-size: 18px; 
+    }
+    main {
+        justify-content: center; 
+        align-items: center; 
+        padding: 0px;
+        margin: 0px;
+        
+    }
+    .bio {
+        gap: 30px;
+    }
+    .links .btn {
+        font-size: 18px; /
+    }
+    .project-card {
+        width: 48%; 
+      }
+}
+
+
+
+  
+  
+  
+article figcaption{
+    text-align: justify;
+}
+figcaption ul{
+    display: flex;
+    gap: 25px;
+}
+figcaption h5{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Resume */
+#rmain.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .skills, .education {
+    padding: 1rem;
+  }
+  .skills{
+    text-align: justify;
+  }
+  .skills ul {
+    list-style: none;
+  }
+  
+  .skills ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background-color: #ffecec; 
+  }
+  
+  table th, table td {
+    border: 1.5px solid #000000;
+    padding: 0.5rem;
+    text-align: left;
+  }
+  rmain .btn{
+    text-align: left;
+  }
+
+  
+/*contact*/
+form {
+    margin: 0 auto;
+    width: 40%;
+    text-align: justify;
+    font-weight: bold;
+}
+
+form input, form label, form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+form button {
+    background-color: #80585B;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 auto;
+    display: block;
+}
+
+form button:hover {
+    background-color: #a9787b;
+}
+
+
+@media (max-width: 1025px) {
+    form {
+        width: 60%;  
+        
+    }
+
+    form input, form label, form textarea {
+        margin-bottom: 31px;  
+    }
+
+    form button {
+        margin-top: 108px;
+        padding: 12px 20px;  
+        font-size: 18px; 
+    }
+}
+/* For mobile devices */
+@media (max-width: 600px) {
+    form button {
+        margin-top: 20px;
+        padding: 12px 20px; 
+        font-size: 18px;  
+    }
+    form {
+        
+        width: 80%;  
+        
+    }
+    #contact-footer{
+        margin-top: 165px;
+    }
+    .adventures {
+        margin-left: 0px;
+        width: 90%; 
+        padding: 10px;
+        
+      }
+    .project-card {
+      width: 100%; 
+  }
+}
+
+/*footer*/
+.footer-container {
+    background-color: #614346;
+    color: white;
+    display: flex;  
+    font-size: 10px;
+    margin: 0; 
+    padding: 0;
+    gap: 0; 
+    height: 80px;
+    margin-top: 55px;
+    padding: 0 10px 0 10px;
+}
+
+.footer-copyright {
+    background-color: #80585B;
+    font-size: 9px;
+    color: white;
+    text-align: center;
+    margin: 0; 
+    padding: 1px 0; 
+    line-height: 1; 
+}
+
+.footer-social {
+    margin-left: auto;
+    padding-top: 10px;
+    margin-right: 50px;
+    justify-content: center;
+    
+}
+.footer-social-icons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 17px;
+}
+.footer-social-icons .icon-groups{
+    display: flex;
+    gap: 40px;
+}
+.footer-social-icons a {
+    color: #F4D3D6;
+    text-decoration: none; 
+    font-size: 15px; 
+}
+
+.footer-social-icons a:hover {
+    color: #FFFFFF; 
+}
+
+.footer-social p {
+    display: none;
+}
+
+
+@media (min-width: 768px) {
+    
+    .container{
+        display: flex;
+        padding: 0 30px 150px 30px;
+    }
+    .education{
+        margin-left: auto;
+        width: 40%;
+    }
+    
+    
+    .adventures .gallery figure:nth-child(1),
+    .adventures .gallery figure:nth-child(2) {
+        flex: 1 1 48%; 
+    }
+
+    .adventures .gallery figure:nth-child(3) {
+        flex: 1 1 100%; 
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+    }
+
+    .adventures figure img {
+        max-width: 50%;
+        margin-right: 20px;
+    }
+
+    .adventures figure figcaption {
+        text-align: left;
+        margin: 0;
+    }
+}
+@media (min-width: 1025px) {
+    .links{
+        margin-bottom: 71.5px;
+    }
+    .menu-icon {
+        display: none; 
+      }
+    .nav-list {
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+      }
+      
+     
+    .adventures .gallery {
+        justify-content: space-between;
+    }
+
+    .adventures .gallery figure:nth-child(3) {
+        flex: 1 1 60%;
+        justify-content: space-between;
+    }
+}
+@media (min-width: 768px) {
+    
+    .footer-social-icons{
+        flex-direction: row;
+        gap: 40px;
+    }
+    .footer-social p{
+        display: block;
+    }
+   
+    #about-main{
+        flex-direction: row;
+    }
+  }
+  @media (min-width: 431px) and (max-width: 1025px) {
+    
+    .bio{
+        margin-bottom: 180px;
+    }
+    .short-cont {
+        margin:200px 60px 382px 60px;
+        
+    }
+
+    body {
+        justify-content: center;
+        margin: auto;
+        font-size: 16px; 
+    }
+
+    h1, h2, h3, h4, h5 {
+        font-size: 1.5em; 
+    }
+
+    p {
+        font-size: 1.2em; 
+    }
+
+    .button, .menu-item {
+        font-size: 1em; 
+    }
+    #welcome{
+        font-size: 2.5em;
+    }
+    #rmain{
+        margin: 203px 0px 306px 0px;
+    }
+    .links {
+        margin: 0px;
+        gap: 150px;
+    }
+    .btn{
+        padding: 15px;
+        font-size: 1.4em !important;
+    }
+    form button{
+        font-size: 1.4em ;
+
+    }
+    #contact-me{
+        margin-bottom: 40px;
+    }
+
+}
+
+.bio, .links, .adventures {
+    width: 100%;
+}
+#aboutmain{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: justify;
+}

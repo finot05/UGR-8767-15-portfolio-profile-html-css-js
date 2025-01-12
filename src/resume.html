@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome to my portfolio! Explore my projects, skills, and achievements. Connect with me and learn more about my work.">
   <title>Portfolio - Resume</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <header>
@@ -12,9 +15,13 @@
       <div id="logo">
         <span>FS</span>
       </div>
-      <nav>
-        <ul>
-          <li><a href="Home.html">Home</a></li>
+      <nav class="navbar">
+        <button class="menu-icon" aria-label="Toggle navigation menu">
+          <i class="fas fa-bars" aria-hidden="true"></i> <!-- Font Awesome Hamburger Icon -->
+          <i class="fas fa-times" aria-hidden="true"></i> <!-- X Icon -->
+        </button>
+        <ul class="nav-list" id="nav-list">
+          <li><a href="../index.html">Home</a></li>
           <li><a href="About.html">About Me</a></li>
           <li><a href="Projects.html">Projects</a></li>
           <li><a href="Resume.html">Resume</a></li>
@@ -23,69 +30,94 @@
       </nav>
     </div>      
   </header>
-  <main>
+  <main id="rmain" class="">
     <h2>Resume</h2>
-    <section class="skills">
-      <h3>Skills</h3>
-      <ul>
-        <li><strong>Programming Languages:</strong> Python, Java</li>
-        <li><strong>Web Development:</strong> HTML, CSS, JavaScript</li>
-        <li><strong>Languages:</strong> Amharic (Fluent), English (Intermediate)</li>
-      </ul>
-    </section>
-    <section class="education">
-      <h3>Education</h3>
-      <p>Bachelor of Science in Software Engineering (Expected 2027)</p>
-      <p>Addis Ababa Institute of Technology (AAiT), Addis Ababa, Ethiopia</p>
-      <table>
-        <thead>
-          <tr>
-            <th>Year</th>
-            <th>Institution</th>
-            <th>Program</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>2023 - 2027</td>
-            <td>Addis Ababa Institute of Technology (AAiT)</td>
-            <td>Bachelor of Science in Software Engineering</td>
-          </tr>
-          <tr>
-            <td>2019 - 2023</td>
-            <td>ABC High School</td>
-            <td>High School Diploma</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+    <div class="container">
+      <section class="skills">
+        <h3>Skills</h3>
+        <ul>
+          <li><strong>Programming Languages:</strong> Python, Java</li>
+          <li><strong>Web Development:</strong> HTML, CSS, JavaScript</li>
+          <li><strong>Languages:</strong> Amharic (Fluent), English (Intermediate)</li>
+        </ul>
+      </section>
+      <section class="education">
+        <h3>Education</h3>
+        <p>Bachelor of Science in Software Engineering (Expected 2027)</p>
+        <p>Addis Ababa Institute of Technology (AAiT), Addis Ababa, Ethiopia</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Year</th>
+              <th>Institution</th>
+              <th>Program</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2023 - 2027</td>
+              <td>Addis Ababa Institute of Technology (AAiT)</td>
+              <td>Bachelor of Science in Software Engineering</td>
+            </tr>
+            <tr>
+              <td>2019 - 2023</td>
+              <td>ABC High School</td>
+              <td>High School Diploma</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
     
-    
-        
-  
     <div class="download">
-      <button>Download CV</button>
+      <a href="assets/Finoteloza-Sisay-FlowCV-Resume-20241119.pdf"
+        download="Finoteloza-Sisay-FlowCV-Resume-20241119.pdf"
+        class="btn" id="downloadResume" ><i class="cvd"></i>Download CV</a>
     </div>
   </main>
  
   <footer>
-    <div>
-      <div>
-        <p>Contact Info</p> 
+    <div class="footer-container">
+      <div class="footer-contact">
+        <p class="footer-title">Contact Info</p>
         <p>Phone: +251942055380</p>
         <p>Email: finotelozasisay@gmail.com</p>
       </div>
-      <div>
-        <p>Connect with Me</p>
-        <a href="https://web.facebook.com/profile.php?id=61569473900438"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.linkedin.com/in/finote-sisay-372832209/"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://t.me/Finot05"><i class="fa-brands fa-telegram"></i></a>
-        <a href="https://www.instagram.com/finot_21/"><i class="fa-brands fa-instagram"></i></a>
-      </div>
-      <div>
-        <p>&copy; 2024 Finoteloza Sisay. All rights reserved.</p>
+  
+      <div class="footer-social">
+        <p class="footer-title">Connect with Me</p>
+        <div class="footer-social-icons">
+          <div class="icon-groups">
+            <a href="https://web.facebook.com/profile.php?id=61569473900438" 
+               class="social-link" 
+               aria-label="Connect with me on Facebook">
+              <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/finote-sisay-372832209/" 
+               class="social-link" 
+               aria-label="Connect with me on LinkedIn">
+              <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="icon-groups">
+            <a href="https://t.me/Finot05" 
+               class="social-link" 
+               aria-label="Connect with me on Telegram">
+              <i class="fa-brands fa-telegram" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/finot_21/" 
+               class="social-link" 
+               aria-label="Connect with me on Instagram">
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
+    <div class="footer-copyright">
+      <p>&copy; 2024 Finoteloza Sisay. All rights reserved.</p>
+    </div>
   </footer>
+  <script src="../index.js"></script>
 </body>
 </html>
